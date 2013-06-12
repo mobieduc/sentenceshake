@@ -16,5 +16,10 @@ class Bootstrap extends Zend_Application_Bootstrap_Bootstrap {
         $viewRender->setViewSuffix('tpl');
     }
 
+    protected function _initEmailTransport() {
+        $mailTransport = new Zend_Mail_Transport_Smtp('mail.mobieduc.com', $this->getOption('mail'));
+        Zend_Mail::setDefaultTransport($mailTransport);
+    }
+
 }
 

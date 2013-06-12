@@ -1,0 +1,60 @@
+/* GLOBAL  */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+    margin: 0;
+	padding: 0;
+	vertical-align: baseline;
+	list-style:none;
+}
+
+a{text-decoration:none; font:12px Helvetica, Arial, Verdana;}
+body{background:url(../images/background.png) repeat;}
+#container{width:950px; min-height:600px;  margin:0 auto; position:relative; }
+
+.logar{position:relative; top:480px;}
+.logo{width:794px; height:91px; margin:70px auto 0 auto; background:url(../images/logo.png) center no-repeat; cursor:pointer;}
+.table{width:950px; height:80px; background:url(../images/table.png) center no-repeat; position:absolute; bottom:0; z-index:0;}
+.milk-shake{width:303px; height:309px; background:url(../images/milk-shake.png) center no-repeat;  position:absolute; bottom:50px; left:60px; z-index:1;}
+
+.login{background:rgba(140, 181, 158, 0.8);   width:380px; height:170px; border-radius:10px; position:absolute; right:100px; bottom:150px; font:16px verdana, arial; padding:20px;-webkit-box-shadow: 2px 2px 5px rgba(50, 50, 50, 0.3);-moz-box-shadow:    2px 2px 5px rgba(50, 50, 50, 0.3);box-shadow:         2px 2px 5px rgba(50, 50, 50, 0.3);}
+.logar input{width:260px; height:25px; border:2px solid #000; color:#4BA994; border-radius:10px; padding:3px 5px;  outline:none; margin:0 0 10px 0;}
+.logar input[type='email']{width:296px !important; }
+.logar label{margin:0 0 10px 0; font-weight:600; text-shadow:1px 1px 4px #FFF;}
+.logar input[type='submit']{position:absolute; border:2px solid #000; right:25px; font-size:14px;    bottom:30px;  float:left; color:#000;  padding:2px 15px  !important; height:33px !important;  width:auto; background:#FFF; -webkit-transition: background 0.5s ease-out;  -moz-transition: background 0.5s ease-out; cursor:pointer;}
+.logar input[type='submit']:hover{background:#4BA994;}
+
+.forgot-password{position:absolute; right:33px; bottom:90px; font:12px Helvetica, Arial, Verdana; color:#000; cursor:pointer;}
+.forgot-password:hover{color:#FFF; text-shadow:1px 1px 1px #000;}
+
+.create-account{position:absolute;  left:15px; height:auto; line-height:20px;   border:2px solid #000;  bottom:40px; background:#4BA994;  padding:6px 10px; border-radius:10px; font:14px verdana, arial; color:#000; -webkit-transition: background 0.5s ease-out; -moz-transition: background 0.5s ease-out; cursor:pointer;}
+.create-account:hover{background:#FFF; color:#000; border:2px solid #000;}
+
+.cadastro{width:364px; height:400px; padding:50px 30px; background:rgba(140, 181, 158, 0.8); border-radius:20px; margin:50px auto; position:relative; display:none;-webkit-box-shadow: 2px 2px 5px rgba(50, 50, 50, 0.3);-moz-box-shadow:    2px 2px 5px rgba(50, 50, 50, 0.3);box-shadow:         2px 2px 5px rgba(50, 50, 50, 0.3);}
+.cadastro input{width:350px; height:25px; border:2px solid #000; color:#4BA994; border-radius:10px; padding:3px 5px;  outline:none; margin:0 0 10px 0;}
+.cadastro label{margin:0 0 10px 0;  font:16px verdana, arial; font-weight:600; text-shadow:1px 1px 4px #FFF; display:block;}
+.cadastro input[type='submit']{position:absolute; border:2px solid #000; left:172px; font-size:14px;    bottom:70px;  float:left; color:#000;  padding:2px 15px  !important; height:33px !important;  width:auto; background:#FFF; -webkit-transition: background 0.5s ease-out;  -moz-transition: background 0.5s ease-out; cursor:pointer;}
+.cadastro input[type='submit']:hover{background:#4BA994;}
+.cadastro #password{padding-right:110px; width:245px;}
+
+#result{color:#FFF; width:90px; position:absolute;  float:left; text-shadow:1px 1px 1px #000; margin:6px 0 0 -100px; font:12px verdana, arial; padding:5px 0; border-radius:10px; text-align:center; line-height:13px;}
+#msg-psw{font:12px verdana,arial; color:#D90000; display:block; }
+
+.close-cadastro, .close-psw{cursor:pointer; position:absolute; top:0px; right:0px;  font:16px verdana, arial;  line-height:15px; padding:7px 9px ; border:2px solid #000; background:#FFF; color:#000; text-shadow:1px 1px 1px  #FFF; font-weight:bold; border-radius:0px 20px 0px  10px;-webkit-box-shadow: 0px 0px 8px rgba(50, 50, 50, 0.25);-moz-box-shadow:    0px 0px 8px rgba(50, 50, 50, 0.25);box-shadow:         0px 0px 8px rgba(50, 50, 50, 0.25);}
+.close-cadastro:hover, .close-psw:hover{background:#4BA994; color:#FFF; text-shadow:1px 1px 1px #000;}
+.close-psw{ border-radius:0 13px 0 8px;}
+
+.lost-password{display:none;background:rgba(140, 181, 158, 0.8);   width:380px; height:170px; border-radius:10px; position:absolute; right:100px; bottom:150px; font:16px verdana, arial; padding:20px;-webkit-box-shadow: 2px 2px 5px rgba(50, 50, 50, 0.3);-moz-box-shadow:    2px 2px 5px rgba(50, 50, 50, 0.3);box-shadow:         2px 2px 5px rgba(50, 50, 50, 0.3);}
+.lost-password  form{ margin:10px 0 0 0;text-align:center; font-size:15px; }
+.lost-password form label{float:left; width:100%; margin:20px 0 20px 0; text-align:center;}
+.lost-password #send{right:175px; bottom:20px;}
+
+.cadastro  .short{ background-image: linear-gradient(bottom, rgb(179,11,11) 24%, rgb(204,26,26) 62%, rgb(219,46,46) 81%);background-image: -o-linear-gradient(bottom, rgb(179,11,11) 24%, rgb(204,26,26) 62%, rgb(219,46,46) 81%);background-image: -moz-linear-gradient(bottom, rgb(179,11,11) 24%, rgb(204,26,26) 62%, rgb(219,46,46) 81%);background-image: -webkit-linear-gradient(bottom, rgb(179,11,11) 24%, rgb(204,26,26) 62%, rgb(219,46,46) 81%);background-image: -ms-linear-gradient(bottom, rgb(179,11,11) 24%, rgb(204,26,26) 62%, rgb(219,46,46) 81%);}
+.cadastro .weak{background-image: linear-gradient(bottom, rgb(226,150,37) 28%, rgb(255,180,63) 64%);background-image: -o-linear-gradient(bottom, rgb(226,150,37) 28%, rgb(255,180,63) 64%);background-image: -moz-linear-gradient(bottom, rgb(226,150,37) 28%, rgb(255,180,63) 64%);background-image: -webkit-linear-gradient(bottom, rgb(226,150,37) 28%, rgb(255,180,63) 64%);background-image: -ms-linear-gradient(bottom, rgb(226,150,37) 28%, rgb(255,180,63) 64%);}
+.cadastro .good{background-image: linear-gradient(bottom, rgb(46,182,160) 4%, rgb(74,219,192) 52%);background-image: -o-linear-gradient(bottom, rgb(46,182,160) 4%, rgb(74,219,192) 52%);background-image: -moz-linear-gradient(bottom, rgb(46,182,160) 4%, rgb(74,219,192) 52%);background-image: -webkit-linear-gradient(bottom, rgb(46,182,160) 4%, rgb(74,219,192) 52%);background-image: -ms-linear-gradient(bottom, rgb(46,182,160) 4%, rgb(74,219,192) 52%);}
+.cadastro .strong{background-image: linear-gradient(bottom, rgb(27,207,8) 10%, rgb(54,249,34) 55%);background-image: -o-linear-gradient(bottom, rgb(27,207,8) 10%, rgb(54,249,34) 55%);background-image: -moz-linear-gradient(bottom, rgb(27,207,8) 10%, rgb(54,249,34) 55%);background-image: -webkit-linear-gradient(bottom, rgb(27,207,8) 10%, rgb(54,249,34) 55%);background-image: -ms-linear-gradient(bottom, rgb(27,207,8) 10%, rgb(54,249,34) 55%);}
+
+.box{width:364px; height:400px; padding:50px 30px;	text-align:center; font:15px verdana, arial; background:rgba(140, 181, 158, 0.8); border-radius:20px; margin:50px auto; position:relative; -webkit-box-shadow: 2px 2px 5px rgba(50, 50, 50, 0.3);-moz-box-shadow:    2px 2px 5px rgba(50, 50, 50, 0.3);box-shadow:         2px 2px 5px rgba(50, 50, 50, 0.3);}
+
+.dados-invalidos{float:left; width:360px;  padding:5px 30px; text-align:center; background:rgba(140, 181, 158, 0.8); border-radius:10px; border:1px solid #CCC; color:#B20000; text-shadow:1px 1px 1px #FFF; position:relative; top:110px; left:-21px;-webkit-box-shadow: 2px 2px 5px rgba(50, 50, 50, 0.3);-moz-box-shadow:    2px 2px 5px rgba(50, 50, 50, 0.3);box-shadow:         2px 2px 5px rgba(50, 50, 50, 0.3);}
